@@ -34,7 +34,10 @@
                     <td class="nav-button"><button><i class="fa-solid fa-backward-step"></i></button></td>
                     <td class="nav-button"><button><i class="fa-solid fa-play"></i></button></td>
                     <td class="nav-button"><button><i class="fa-solid fa-forward-step"></i></button></td>
-                    <td class="nav-song"><span>something over here</span></td>
+                    <td class="nav-song"><span>
+                    <audio controls src="http://148.251.43.149:8039/stream"></audio><br>
+                    Speelt nu: <a href="https://hydra.shoutca.st:2199/tunein/kai.pls" class="cc_streaminfo" data-type="song" data-username="kai">Laden ...</a><br />
+                </span></td>
                 </div>
             </div>
         </footer>
@@ -48,6 +51,7 @@
         </main>
         <footer></footer>
     @endauth
+    <script language="javascript" type="text/javascript" src="https://hydra.shoutca.st:2199/system/streaminfo.js"></script>
 </body>
 </html>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
