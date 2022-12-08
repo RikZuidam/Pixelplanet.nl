@@ -1,9 +1,87 @@
+body {
+    font-family: Text;
+}
+
 .auth-fields {
     border: none; 
     border-radius: 10px; 
     border: solid 2px #ccc;
 
     width: 100%;
-    padding: 20px;
-    margin: 10px;
+    padding: 20px 10px;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.alert {
+    margin: 2px 0px;
+}
+
+input {
+    margin: 5px 0px;
+}
+
+a {
+    color: #cfcfcf;
+}
+
+a:hover {
+    color: #999;
+}
+
+.login {
+    background-color: #92eb5b;
+    color: white;
+    border: solid 2px #73e362;
+    font-family: Button;
+    margin: 2px 0px;
+}
+
+.facebook {
+    background-color: #4268af;
+    color: white;
+    border: solid 2px #25437c;
+    font-family: Button;
+    margin: 3px 0px;
+}
+
+.google {
+    background-color: #eba35b;
+    color: white;
+    border: solid 2px #a56e37;
+    font-family: Button;
+    margin: 3px 0px;
+}
+
+.instagram {
+    background-color: #bc2a8d;
+    color: white;
+    border: solid 2px #8a1e68;
+    font-family: Button;
+    margin: 3px 0px;
+}
+
+.snapchat {
+    background-color: #ece90d;
+    color: white;
+    border: solid 2px #c5c208;
+    font-family: Button;
+    margin: 3px 0px;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: Title;
+    src: url(../fonts/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: Text;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Button;
+    src: url(../fonts/Roboto-Medium.ttf);
 }
