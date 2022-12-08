@@ -10,7 +10,7 @@
                         <main>
                             <form action="login" method="post">
                                 @csrf
-
+<!-- Check voor banned ja of nee -->
                                 <input type="text" name="email" id="" placeholder="Gebruikersnaam of e-mailadres" class="auth-fields" value="{{old('email')}}">
                                 @error('email')
                                 <div class="alert alert-danger" role="alert"><i class="fa-solid fa-chevron-right"></i> <strong>Oeps!</strong> {{$message}}</div>
