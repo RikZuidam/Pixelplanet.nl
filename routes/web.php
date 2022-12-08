@@ -15,7 +15,7 @@ use App\Http\Controllers\AuthenticateController;
 */
 
 Route::get('/', function () {
-    return view('playground');
+    return view('home');
 })->middleware('auth');
 
 Route::get('register', function () {
