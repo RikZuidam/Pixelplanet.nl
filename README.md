@@ -1,12 +1,12 @@
-Github :
-git add .
-git commit -m "message"
-git push
-
-git pull
-
-PHP :
-php artisan serve
-
-php artisan migrate:fresh
-php artisan db:seed
+Github : <br>
+git add . <br>
+git commit -m "message" <br>
+git push <br>
+<br>
+git pull <br>
+<br>
+PHP : <br>
+php artisan serve <br>
+<br> 
+php artisan migrate:fresh <br>
+php artisan db:seed <br>
