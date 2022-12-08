@@ -16,8 +16,9 @@ return new class extends Migration
         Schema::create('authenticate', function (Blueprint $table) {
             $table->id();
             $table->text('email');
-            $table->text('email_verified_at');
+            $table->text('email_verified_at')->nullable();
             $table->text('password');
+            $table->integer('role')->default(0);
             $table->timestamps();
         });
     }

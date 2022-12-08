@@ -1,5 +1,9 @@
-.login-fields {
+.auth-fields {
     border: none; 
     border-radius: 10px; 
-    border: solid 2px #ccc
+    border: solid 2px #ccc;
+
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
 }

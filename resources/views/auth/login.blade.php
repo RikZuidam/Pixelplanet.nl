@@ -6,11 +6,18 @@
                     logo
                 </header>
                 <main>
-                    <form action="" method="post">
+                    <form action="login" method="post">
                         @csrf
-                        <input type="text" name="" id="" placeholder="Gebruikersnaam of e-mailadres" class="login-fields p-3 w-100 m-2">
-
-                        <input type="password" name="" id="" placeholder="Wachtwoord" class="login-fields p-3 w-100 m-2">
+                        <input type="text" name="email" id="" placeholder="Gebruikersnaam of e-mailadres" class="auth-fields" value="{{old('email')}}">
+                        <br>
+                        @error('email')
+                            <p class="text-danger text-xs mt-1">{{$message}}</p>
+                        @enderror
+                        <input type="password" name="password" id="" placeholder="Wachtwoord" class="auth-fields" value="{{old('password')}}">
+                        <br>
+                        @error('password')
+                            <p class="text-danger text-xs mt-1">{{$message}}</p>
+                        @enderror
                         <a href="" class="float-right">Wachtwoord vergeten?</a><br>
                         <span class="float-left"><input type="radio" name="" id=""> Onthoud mij</span>
                         <br><br>
