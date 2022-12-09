@@ -1,6 +1,14 @@
 html,body {
-    font-family: Text;
+    font-family: articulat-cf, sans-serif;
+    font-weight: 500;
+    font-style: normal;
     height: 100%;
+}
+
+.logoPP {
+    font-family: articulat-cf, sans-serif;
+    font-weight: 800;
+    font-style: normal;
 }
 
 .auth-fields {
@@ -37,48 +45,79 @@ a:hover {
     background-color: #92eb5b;
     color: white;
     border: solid 2px #73e362;
-    font-family: Button;
+    font-family: articulat-cf, sans-serif;
+    font-weight: 500;
+    font-style: normal;
     margin: 2px 0px;
+    transition: all 0.3s ease-in-out;
 }
 
 .fa-brands {
     margin-right: 3px;    
 }
 
+.social-hover:hover {
+    transform: scale(1.1);
+}
+
+#message-field {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.cmds {
+    
+}
+
 .facebook {
     background-color: #4268af;
     color: white;
     border: solid 2px #25437c;
-    font-family: Button;
+    font-family: articulat-cf, sans-serif;
+    font-weight: 500;
+    font-style: normal;
     margin: 3px 0px;
+    transition: all 0.3s ease-in-out;
 }
 
 .google {
     background-color: #eba35b;
     color: white;
     border: solid 2px #a56e37;
-    font-family: Button;
+    font-family: articulat-cf, sans-serif;
+    font-weight: 500;
+    font-style: normal;
     margin: 3px 0px;
+    transition: all 0.3s ease-in-out;
 }
 
 .instagram {
     background-color: #bc2a8d;
     color: white;
     border: solid 2px #8a1e68;
-    font-family: Button;
+    font-family: articulat-cf, sans-serif;
+    font-weight: 500;
+    font-style: normal;
     margin: 3px 0px;
+    transition: all 0.3s ease-in-out;
 }
 
 .snapchat {
     background-color: #ece90d;
     color: white;
     border: solid 2px #c5c208;
-    font-family: Button;
+    font-family: articulat-cf, sans-serif;
+    font-weight: 500;
+    font-style: normal;
     margin: 3px 0px;
+    transition: all 0.3s ease-in-out;
 }
 
 .or-line {
-    font-family: Title;
+    font-family: articulat-cf, sans-serif;
+    font-weight: 800;
+    font-style: normal;
     color: rgb(207, 207, 207);
 }
 
@@ -92,7 +131,9 @@ a:hover {
 }
 
 .no-account {
-    font-family: Title;
+    font-family: articulat-cf, sans-serif;
+    font-weight: 800;
+    font-style: normal;
     background-color: rgb(221, 221, 221);
     color: grey;
 }
@@ -105,6 +146,51 @@ a:hover {
     font-size: 15px;
     padding: 15px 10px;
     float: right;
+    font-family: articulat-cf, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    transition: all 0.3s ease-in-out;
+}
+
+.register-button:hover {
+    transform: scale(1.1);
+    background-color:rgb(170, 170, 170);
+    border: solid 2px grey;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    padding: 15px 10px;
+    float: right;
+    font-family: articulat-cf, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+.radio-button {
+    background-color: #5588e6;
+    border-radius: 50px;
+    border: solid 1px #2d59aa;
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin-right: 3px;
+    color: #fff;
+}
+
+.radio {
+    background-color: rgb(119, 119, 119);
+    padding: 20px 15px 10px 15px;
+    border-radius: 10px;
+}
+
+.playnow {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 225px;
+    display: inline-block;
+    color:rgb(207, 207, 207);
 }
 
 /* STARTPAGINA CARD */
@@ -139,8 +225,74 @@ html {
 }
 
 .nav-button {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 90px;
+}
+
+.house {
+    background-color: rgb(113, 209, 57);
+    border: solid 2px rgb(82, 131, 53);
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+    
+}
+
+.house:hover {
+    transform: scale(1.2);
+    color: rgb(82, 131, 53);
+}
+
+.friends {
+    background-color: rgb(255, 147, 46);
+    border: solid 2px rgb(190, 111, 36);
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+}
+
+.friends:hover {
+    transform: scale(1.2);
+    color: rgb(190, 111, 36);
+}
+
+.shop {
+    background-color: rgb(218, 215, 39);
+    border: solid 2px rgb(141, 139, 36);
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+}
+
+.shop:hover {
+    transform: scale(1.2);
+    color: rgb(141, 139, 36);
+}
+
+.settings {
+    background-color: rgb(185, 185, 185);
+    border: solid 2px rgb(122, 122, 122);
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+}
+
+.settings:hover {
+    transform: scale(1.2);
+    color: rgb(122, 122, 122);
+}
+
+.logout {
+    background-color: rgb(255, 46, 46);
+    border: solid 2px rgb(182, 32, 32);
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+}
+
+.logout:hover {
+    transform: scale(1.2);
+    color: rgb(126, 25, 25);
 }
 
 .nav-button > * {

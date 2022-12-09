@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="col-5">
                         <header>
-                            logo
+                            <div class="logoPP">Hier komt een logo</div>
                         </header>
                         <main>
                             <form action="login" method="post">
@@ -26,7 +26,7 @@
                                     <small><a href="" class="float-right password-forget">Wachtwoord vergeten?</a></small>
                                 </span>
                                 <br><br>
-                                <button class="auth-fields login" type="submit" class="w-100 p-3"><i class="fa-solid fa-chevron-right"></i> Inloggen met <strong>wachtwoord</strong></button>
+                                <button class="auth-fields login social-hover" type="submit" class="w-100 p-3"><i class="fa-solid fa-chevron-right"></i> Inloggen met <strong>wachtwoord</strong></button>
                             </form>
                         </main>
                     </div>
@@ -37,10 +37,10 @@
                         </div>   <div style="clear:both;"></div></span>
                     </div>
                     <div class="col-5">
-                        <button class="auth-fields facebook" type="submit" class="w-100 p-3"><i class="fa-brands fa-facebook"></i> Inloggen met <strong>Facebook</strong></button>
-                        <button class="auth-fields google" type="submit" class="w-100 p-3"><i class="fa-brands fa-google"></i> Inloggen met <strong>Google</strong></button>
-                        <button class="auth-fields instagram" type="submit" class="w-100 p-3"><i class="fa-brands fa-instagram"></i> Inloggen met <strong>Instagram</strong></button>
-                        <button class="auth-fields snapchat" type="submit" class="w-100 p-3"><i class="fa-brands fa-snapchat"></i> Inloggen met <strong>Snapchat</strong></button>
+                        <button class="auth-fields facebook social-hover" type="submit" class="w-100 p-3"><i class="fa-brands fa-facebook"></i> Inloggen met <strong>Facebook</strong></button>
+                        <button class="auth-fields google social-hover" type="submit" class="w-100 p-3"><i class="fa-brands fa-google"></i> Inloggen met <strong>Google</strong></button>
+                        <button class="auth-fields instagram social-hover" type="submit" class="w-100 p-3"><i class="fa-brands fa-instagram"></i> Inloggen met <strong>Instagram</strong></button>
+                        <button class="auth-fields snapchat social-hover" type="submit" class="w-100 p-3"><i class="fa-brands fa-snapchat"></i> Inloggen met <strong>Snapchat</strong></button>
                     </div>
                 </div>
                 <br>
@@ -48,8 +48,14 @@
                     <div class="col text-center m-auto">
                         <div class="card no-account">
                             <div class="card-body">
-                                <span class="align-middle">Nog geen account? Maak snel een account aan!</span>
-                                <a href="register" class="register-button" type="submit"><i class="fa-solid fa-chevron-right"></i> Account aanmaken</strong></a>
+                                <div class="row">
+                                    <div class="col-8">
+                                    <span>Nog geen account? Maak snel een account aan!<br><i>Maak vrienden, doe mee en val op.</i></span>
+                                </div>
+                                <div class="col-4">
+                                    <a href="register" class="register-button" type="submit"><i class="fa-solid fa-chevron-right"></i> Account aanmaken</strong></a>
+                                </div>
+                                </div>
                             </div>
                         </div>
                     </div>
