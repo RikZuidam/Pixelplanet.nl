@@ -1,12 +1,12 @@
 html,body {
-    font-family: articulat-cf, sans-serif;
+    font-family: Text;
     font-weight: 500;
     font-style: normal;
     height: 100%;
 }
 
 .logoPP {
-    font-family: articulat-cf, sans-serif;
+    font-family: Text;
     font-weight: 800;
     font-style: normal;
 }
@@ -66,15 +66,15 @@ a:hover {
     font-size: 20px;
 }
 
-.cmds {
+/* .cmds { */
     
-}
+/* } */
 
 .facebook {
     background-color: #4268af;
     color: white;
     border: solid 2px #25437c;
-    font-family: articulat-cf, sans-serif;
+    font-family: Text;
     font-weight: 500;
     font-style: normal;
     margin: 3px 0px;
@@ -85,7 +85,7 @@ a:hover {
     background-color: #eba35b;
     color: white;
     border: solid 2px #a56e37;
-    font-family: articulat-cf, sans-serif;
+    font-family: Text;
     font-weight: 500;
     font-style: normal;
     margin: 3px 0px;
@@ -96,7 +96,7 @@ a:hover {
     background-color: #bc2a8d;
     color: white;
     border: solid 2px #8a1e68;
-    font-family: articulat-cf, sans-serif;
+    font-family: Text;
     font-weight: 500;
     font-style: normal;
     margin: 3px 0px;
@@ -107,7 +107,7 @@ a:hover {
     background-color: #ece90d;
     color: white;
     border: solid 2px #c5c208;
-    font-family: articulat-cf, sans-serif;
+    font-family: Text;
     font-weight: 500;
     font-style: normal;
     margin: 3px 0px;
@@ -115,7 +115,7 @@ a:hover {
 }
 
 .or-line {
-    font-family: articulat-cf, sans-serif;
+    font-family: Text;
     font-weight: 800;
     font-style: normal;
     color: rgb(207, 207, 207);
@@ -131,7 +131,7 @@ a:hover {
 }
 
 .no-account {
-    font-family: articulat-cf, sans-serif;
+    font-family: Text;
     font-weight: 800;
     font-style: normal;
     background-color: rgb(221, 221, 221);
@@ -146,7 +146,7 @@ a:hover {
     font-size: 15px;
     padding: 15px 10px;
     float: right;
-    font-family: articulat-cf, sans-serif;
+    font-family: Text;
     font-weight: 800;
     font-style: normal;
     transition: all 0.3s ease-in-out;
@@ -161,7 +161,7 @@ a:hover {
     font-size: 15px;
     padding: 15px 10px;
     float: right;
-    font-family: articulat-cf, sans-serif;
+    font-family: Text;
     font-weight: 800;
     font-style: normal;
 }
@@ -207,16 +207,8 @@ a:hover {
 /* Fonts */
 
 @font-face {
-    font-family: Title;
-    src: url(../fonts/Roboto-Black.ttf);
-}
-@font-face {
     font-family: Text;
-    src: url(../fonts/Roboto-Regular.ttf);
-}
-@font-face {
-    font-family: Button;
-    src: url(../fonts/Roboto-Medium.ttf);
+    src: url(../fonts/ABeeZee-Regular.ttf);
 }
 
 html {
