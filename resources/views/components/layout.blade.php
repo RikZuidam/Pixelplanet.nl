@@ -24,19 +24,24 @@
         </main>
         <footer class="fixed-bottom">
             <div class="navbar w-100">
-                <div class="float-left">
-                    <button class="nav-button house"><i class="fa-solid fa-house-chimney fa-xl"></i></button><button class="nav-button friends" id="friendlist-button"><i class="fa-solid fa-user-group fa-xl"></i></button><button class="nav-button shop"><i class="fa-solid fa-cart-shopping fa-xl"></i></button><button class="nav-button settings"><i class="fa-sharp fa-solid fa-gears fa-xl"></i></button><a href="logout"><button class="nav-button logout"><i class="fa-solid fa-right-from-bracket fa-xl"></i></button></a>
-                </div>
-                <td class="nav-message"><input type="text" name="message" id="message-field" placeholder="Je kunt hier jouw bericht typen..."></td>
-                <div class="float-right radio">
-                    <img src="{{ asset('assets/img/pixelfm.png') }}" alt="PixelFM Logo">
-                    <td><button class="radio-button" id="pause" value="Pause"><i class="fa-solid fa-pause"></i></button></td>
-                    <td><button class="radio-button" id="play" value="Play"><i class="fa-solid fa-play"></i></button></td><br>
-                    <td class="nav-song"><span>
-                    <span class="playnow"><strong>Speelt nu:</strong> <span href="" class="cc_streaminfo" data-type="song" data-username="kai">Laden...</span></span>
-                    <div>
-                </span></td>
-                </div>
+                    <div class="col-3" style="padding: 0px;">
+                        <!-- <div class="float-left"> -->
+                            <button class="nav-button house"><i class="fa-solid fa-house-chimney fa-xl"></i></button><button class="nav-button friends" id="friendlist-button"><i class="fa-solid fa-user-group fa-xl"></i></button><button class="nav-button shop"><i class="fa-solid fa-cart-shopping fa-xl"></i></button><button class="nav-button settings"><i class="fa-sharp fa-solid fa-gears fa-xl"></i></button><a href="logout"><button class="nav-button logout"><i class="fa-solid fa-right-from-bracket fa-xl"></i></button></a>
+                        <!-- </div> -->
+                    </div>
+                    <div class="col-6 w-100 text-center">
+                        <td class="nav-message"><input type="text" name="message" id="message-field" placeholder="Je kunt hier jouw bericht typen..."></td><button id="cmds-help"><i class="fa-solid fa-question"></i></button>
+                    </div>
+                    <div class="col-3" style="padding: 0px;">
+                        <div class="float-right radio">
+                            <img src="{{ asset('assets/img/pixelfm.png') }}" alt="PixelFM Logo">
+                            <td><button class="radio-button" id="pause" value="Pause"><i class="fa-solid fa-pause"></i></button></td>
+                            <td><button class="radio-button" id="play" value="Play"><i class="fa-solid fa-play"></i></button></td><br>
+                            <td class="nav-song"><span>
+                            <span class="playnow"><strong>Speelt nu:</strong> <span href="" class="cc_streaminfo" data-type="song" data-username="kai">Laden...</span></span>
+                        </span></td>
+                        </div>
+                    </div>
             </div>
             <script language="javascript" type="text/javascript" src="https://hydra.shoutca.st:2199/system/streaminfo.js"></script>
             <script>
