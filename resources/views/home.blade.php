@@ -2,7 +2,7 @@
     @section('title')
         Home
     @endsection
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
         <div class="row m-auto">
             <div class="col-3 text-center">
 
