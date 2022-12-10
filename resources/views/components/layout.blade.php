@@ -25,11 +25,7 @@
         <footer class="fixed-bottom">
             <div class="navbar w-100">
                 <div class="float-left">
-                    <td><button class="nav-button house"><i class="fa-solid fa-house-chimney"></i></button></td>
-                    <td><button class="nav-button friends" id="friendlist-button"><i class="fa-solid fa-user-group"></i></button></td>
-                    <td><button class="nav-button shop"><i class="fa-solid fa-cart-shopping"></i></button></td>
-                    <td><button class="nav-button settings"><i class="fa-sharp fa-solid fa-gears"></i></button></td>
-                    <td><a href="logout"><button class="nav-button logout"><i class="fa-solid fa-right-from-bracket"></i></button></a></td>
+                    <button class="nav-button house"><i class="fa-solid fa-house-chimney fa-xl"></i></button><button class="nav-button friends" id="friendlist-button"><i class="fa-solid fa-user-group fa-xl"></i></button><button class="nav-button shop"><i class="fa-solid fa-cart-shopping fa-xl"></i></button><button class="nav-button settings"><i class="fa-sharp fa-solid fa-gears fa-xl"></i></button><a href="logout"><button class="nav-button logout"><i class="fa-solid fa-right-from-bracket fa-xl"></i></button></a>
                 </div>
                 <td class="nav-message"><input type="text" name="message" id="message-field" placeholder="Je kunt hier jouw bericht typen..."></td>
                 <div class="float-right radio">
