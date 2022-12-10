@@ -2,16 +2,21 @@
     <x-card>
         <div class="card">
             <div class="card-body">
+                <!-- Check met PHP voor banned ja of nee (Zoja, onderstaande alert weergeven met informatie over de ban. Zo niet, geen alert en gewoon redirect naar home page) -->
+                <div class="alert alert-danger" role="alert" style="margin-bottom: 20px;">
+                    <i class="fa-solid fa-ban"></i> Oei, zo te zien ben je verbannen.<br>
+                    <strong>Reden: </strong>Pesten, intimdatie en/of discriminatie<br>
+                    <strong>Verbanning verloopt: </strong>27 dec. 2022 14:34
+                </div>
+                <!-- Zekers -->
                 <div class="row">
                     <div class="col-5">
                         <header>
-                            <div class="logoPP">Hier komt een logo</div>
+                            <h2><strong>Inloggen</strong></h2>
                         </header>
                         <main>
                             <form action="login" method="post">
                                 @csrf
-                                <!-- Check voor banned ja of nee -->
-                                <!-- Zekers -->
                                 <input type="text" name="email" id="" placeholder="Gebruikersnaam of e-mailadres" class="auth-fields" value="{{old('email')}}">
                                 @error('email')
                                 <div class="alert alert-danger" role="alert"><i class="fa-solid fa-chevron-right"></i> <strong>Oeps!</strong> {{$message}}</div>
@@ -22,10 +27,10 @@
                                 @enderror
 
                                 <span>
-                                    <input clas="float-left" type="checkbox" name="" id=""> Onthoud mij</input>
+                                    <!-- <input clas="float-left" type="checkbox" name="" id=""> Onthoud mij</input> -->
                                     <small><a href="" class="float-right password-forget">Wachtwoord vergeten?</a></small>
                                 </span>
-                                <br><br>
+
                                 <button class="auth-fields login social-hover" type="submit" class="w-100 p-3"><i class="fa-solid fa-chevron-right"></i> Inloggen met <strong>wachtwoord</strong></button>
                             </form>
                         </main>
