@@ -13,7 +13,7 @@
             background-repeat: "repeat";
         }
     </style>
-    <title>Document</title>
+    <title>@yield('title')</title>
 </head>
 <body>
     @auth

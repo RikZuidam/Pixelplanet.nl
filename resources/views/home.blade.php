@@ -1,4 +1,7 @@
 <x-layout>
+    @section('title')
+        Home
+    @endsection
     <div class="container-fluid">
         <div class="row m-auto">
             <div class="col-3 text-center">

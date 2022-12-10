@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             // 0 => male ; 1 => female          -- Voor kleding enz
-            $table->integer('sex');
+            $table->boolean('sex');
             $table->text('status')->nullable();
             $table->string('username');
             $table->timestamps();

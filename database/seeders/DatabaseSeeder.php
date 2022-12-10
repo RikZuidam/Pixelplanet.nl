@@ -16,7 +16,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
         // User Create
         $user = DB::table('authenticate')->insert([
             'email' => 'kai@kai.kai',
@@ -34,5 +33,7 @@ class DatabaseSeeder extends Seeder
             'email' => 'user@user.user',
             'password' => Hash::make('user')
         ]);
+
+        \App\Models\Player::factory(10)->create();
     }
 }
