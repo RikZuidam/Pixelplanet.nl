@@ -179,9 +179,8 @@ a:hover {
 }
 
 .radio {
-    background-color: rgb(119, 119, 119);
+    background-color: #303242;
     padding: 20px 15px 10px 15px;
-    border-radius: 10px;
 }
 
 .playnow {
@@ -223,68 +222,68 @@ html {
 
 .house {
     background-color: rgb(113, 209, 57);
-    border: solid 2px rgb(82, 131, 53);
-    border-radius: 10px;
+    border: none;
+    /* border: solid 2px rgb(82, 131, 53); */
     transition: all 0.2s ease-in-out;
-    color: #fff;
+    color: rgb(82, 131, 53);
     
 }
 
 .house:hover {
-    transform: scale(1.2);
-    color: rgb(82, 131, 53);
+    transform: scale(1.05);
+    color: rgb(149, 255, 87);
 }
 
 .friends {
     background-color: rgb(255, 147, 46);
-    border: solid 2px rgb(190, 111, 36);
-    border-radius: 10px;
+    border: none;
+    /* border: solid 2px rgb(190, 111, 36); */
     transition: all 0.2s ease-in-out;
-    color: #fff;
+    color: rgb(190, 111, 36);
 }
 
 .friends:hover {
-    transform: scale(1.2);
-    color: rgb(190, 111, 36);
+    transform: scale(1.05);
+    color: rgb(255, 187, 123);
 }
 
 .shop {
     background-color: rgb(218, 215, 39);
-    border: solid 2px rgb(141, 139, 36);
-    border-radius: 10px;
+    border: none;
+    /* border: solid 2px rgb(141, 139, 36); */
     transition: all 0.2s ease-in-out;
-    color: #fff;
+    color: rgb(141, 139, 36);
 }
 
 .shop:hover {
-    transform: scale(1.2);
-    color: rgb(141, 139, 36);
+    transform: scale(1.05);
+    color: rgb(255, 252, 80);
 }
 
 .settings {
     background-color: rgb(185, 185, 185);
-    border: solid 2px rgb(122, 122, 122);
-    border-radius: 10px;
+    border: none;
+    /* border: solid 2px rgb(122, 122, 122); */
     transition: all 0.2s ease-in-out;
-    color: #fff;
+    color: rgb(122, 122, 122);
 }
 
 .settings:hover {
-    transform: scale(1.2);
-    color: rgb(122, 122, 122);
+    transform: scale(1.05);
+    color: rgb(235, 235, 235);
 }
 
 .logout {
     background-color: rgb(255, 46, 46);
-    border: solid 2px rgb(182, 32, 32);
-    border-radius: 10px;
+    border: none;
+    /* border: solid 2px rgb(182, 32, 32); */
     transition: all 0.2s ease-in-out;
-    color: #fff;
+    color: rgb(175, 39, 39);
 }
 
 .logout:hover {
-    transform: scale(1.2);
-    color: rgb(126, 25, 25);
+    transform: scale(1.05);
+    color: rgb(255, 115, 115);
 }
 
 .navbar {
@@ -294,10 +293,11 @@ html {
 
 #message-field {
     width: 30%;
+    height: 80%;
 }
 
 footer {
-    background-color: #636363;
+    background-color: #16192C;
 }
 
 #friendlist {
