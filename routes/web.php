@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthenticateController;
+use App\Models\Friend;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,16 @@ use App\Http\Controllers\AuthenticateController;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home')->with([
+        'friends' => Friend::where([
+                        ['sender_player', 1],
+                        ['status', 1]
+                    ])->orWhere([
+                        ['reciever_player', 1],
+                        ['status', 1]
+                    ])->get(),
+        'test' => 'test'
+    ]);
 })->middleware('auth');
 
 Route::get('register', function () {
