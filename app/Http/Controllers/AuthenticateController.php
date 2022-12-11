@@ -34,7 +34,7 @@ class AuthenticateController extends Controller
         auth()->login($user);
 
         // Redirect to Home-Page
-        return redirect('/')->with('message', 'Welcome ' . $formFields['email']);
+        return redirect('/loading')->with('message', 'Welcome ' . $formFields['email']);
     }
 
     public function login(Request $request)
@@ -51,9 +51,9 @@ class AuthenticateController extends Controller
 
             // Admin / User
             if(auth()->user()->role == 2) {
-                return redirect('/')->with('message', 'Youre an admin!');
+                return redirect('/loading')->with('message', 'Youre an admin!');
             } else {
-                return redirect('/')->with('message', 'You are now logged in!');
+                return redirect('/loading')->with('message', 'You are now logged in!');
             } 
             
         }
