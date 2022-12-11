@@ -1,9 +1,3 @@
-<!-- Test Knop -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#settingsModal">
-  Open Instellingen Modal Test
-</button>
-
-<!-- Instellingen -->
 <div class="modal fade" id="settingsModal" tabindex="-1" aria-labelledby="settingsModalLabel" aria-hidden="true" style="backdrop-filter: blur(5px);">
     <div class="modal-dialog">
         <div class="modal-content" style="background-color: #16192C;">
@@ -36,16 +30,3 @@
         </div>
     </div>
 </div>
-
-<style>
-
-@font-face {
-  font-family: RobotoTitle;
-  src: url(fonts/Roboto-Black.ttf);
-}
-@font-face {
-  font-family: RobotoText;
-  src: url(fonts/Roboto-Regular.ttf);
-}
-
-</style>
