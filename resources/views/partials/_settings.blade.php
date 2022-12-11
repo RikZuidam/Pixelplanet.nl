@@ -2,7 +2,7 @@
     <div class="modal-dialog">
         <div class="modal-content" style="background-color: #16192C;">
             <div class="modal-header">
-                <h3 class="modal-title fs-5" id="settingsModalLabel" style="color: #fff;"><strong>INSTELLINGEN</strong></h3>
+                <h3 class="modal-title fs-5" id="settingsModalLabel" style="color: #fff;"><i class="fa-solid fa-gear"></i> <strong>INSTELLINGEN</strong></h3>
             </div>
             <div class="modal-body" style="color: #fff;">
                 <form class="form-floating">

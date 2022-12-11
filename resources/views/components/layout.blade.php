@@ -30,7 +30,7 @@
                     
                 </div>
                 <div class="col-6 text-center">
-                    <td class="nav-message"><input type="text" name="message" id="message-field" placeholder="Je kunt hier jouw bericht typen..."></td><button id="cmds-help"><i class="fa-solid fa-question"></i></button>
+                    <td class="nav-message"><input type="text" name="message" id="message-field" placeholder="Je kunt hier jouw bericht typen..."></td><button id="cmds-help" data-bs-toggle="modal" data-bs-target="#commandsModal"><i class="fa-solid fa-question"></i></button>
                 </div>
                 <div class="col-3" style="padding: 0px;">
                     <div class="radio">
@@ -38,7 +38,7 @@
                         <td><button class="radio-button" id="pause" value="Pause"><i class="fa-solid fa-pause"></i></button></td>
                         <td><button class="radio-button" id="play" value="Play"><i class="fa-solid fa-play"></i></button></td><br>
                         <td class="nav-song"><span>
-                        <span class="playnow"><strong>Speelt nu:</strong> <span href="" class="cc_streaminfo" data-bs-type="song" data-bs-username="kai">Laden...</span></span>
+                        <span class="playnow"><strong>Speelt nu:</strong> <span class="cc_streaminfo" data-type="song" data-username="kai">Laden...</span></span>
                     </span></td>
                     </div>
                 </div>

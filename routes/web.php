@@ -18,27 +18,7 @@ use App\Models\Player;
 */
 
 Route::get('/', function () {
-    $datas = Friend::where([
-        ['sender_player', 1],
-        ['status', 1]
-    ])->orWhere([
-        ['reciever_player', 1],
-        ['status', 1]
-    ])->get();
 
-    $friendsinfo = [];
-
-    foreach ($datas as $data) {
-        if ($data->sender_id != 1) {
-            $friendsinfo[] = Player::where('id', $data->sender_player)->get();
-        } elseif ($data->reciever_id != 1) {
-            $friendsinfo[] = Player::where('id', $data->reciever_player)->get();
-        }
-    }
-
-    return view('home')->with([
-        'friends' => $friendsinfo
-    ]);
 })->middleware('auth');
 
 Route::post('/test', [FriendController::class, 'index']);
