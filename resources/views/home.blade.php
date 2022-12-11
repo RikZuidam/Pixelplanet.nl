@@ -3,14 +3,7 @@
     @section('title')
         Home
     @endsection
-    <!-- {{ $friends }} -->
-    @foreach ($friends as $friend)
-        @if ( $friend->sender_player != 1)
-            {{ $friend->sender_player }} <br>
-        @elseif ( $friend->reciever_player != 1 )
-            {{ $friend->reciever_player }} <br>
-        @endif
-    @endforeach
+    
     <div class="container-fluid p-0">
         <div class="row m-auto">
             <div class="col-3 text-center">
