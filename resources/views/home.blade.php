@@ -4,7 +4,20 @@
     @section('title')
         Home
     @endsection
-    
+
+<style>
+
+@font-face {
+  font-family: RobotoTitle;
+  src: url(fonts/Roboto-Black.ttf);
+}
+@font-face {
+  font-family: RobotoText;
+  src: url(fonts/Roboto-Regular.ttf);
+}
+
+</style>
+
     <div class="container-fluid p-0">
         <div class="row m-auto">
             <div class="col-3 text-center">
@@ -31,9 +44,20 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Mark</td>
-                                    </tr>
+                                @foreach ($friends as $friend)
+                                    @for ($i = 0; $i < count($friend); $i++)
+                                        <tr>
+                                            <td>
+                                                <span style="text-align: left">{{ $friend[0]->name }}</span>
+                                                <span style="text-right float-right">
+                                                <button>[]</button>
+                                                <button>[]</button>
+                                                </span>
+                                                
+                                            </td>
+                                        </tr>
+                                    @endfor
+                                @endforeach
                                 </tbody>
                             </table>
                         </div>

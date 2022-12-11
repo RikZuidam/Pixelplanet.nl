@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthenticateController;
 use App\Http\Controllers\FriendController;
 use App\Models\Friend;
+use App\Models\Player;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +18,7 @@ use App\Models\Friend;
 */
 
 Route::get('/', function () {
-    return view('home');
+
 })->middleware('auth');
 
 Route::post('/test', [FriendController::class, 'index']);
