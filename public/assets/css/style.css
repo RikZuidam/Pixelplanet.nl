@@ -189,6 +189,11 @@ a:hover {
     float: right;
 }
 
+.cc_streaminfo {
+    display: inline !important;
+    opacity: 1 !important;
+}
+
 .playnow {
     overflow: hidden;
     white-space: nowrap;
