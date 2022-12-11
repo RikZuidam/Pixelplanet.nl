@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="https://use.typekit.net/kac4pga.css">
     <style>
         body {
@@ -24,24 +23,25 @@
         </main>
         <footer class="fixed-bottom">
             <div class="navbar w-100">
-                    <div class="col-3" style="padding: 0px;">
-                        <!-- <div class="float-left"> -->
-                            <button class="nav-button house"><i class="fa-solid fa-house-chimney fa-xl"></i></button><button class="nav-button friends" id="friendlist-button"><i class="fa-solid fa-user-group fa-xl"></i></button><button class="nav-button shop"><i class="fa-solid fa-cart-shopping fa-xl"></i></button><button class="nav-button settings" data-toggle="modal" data-target="#settingsModal"><i class="fa-sharp fa-solid fa-gears fa-xl"></i></button><a href="logout"><button class="nav-button logout"><i class="fa-solid fa-right-from-bracket fa-xl"></i></button></a>
-                        <!-- </div> -->
+                <div class="col-3" style="padding: 0px;">
+                    <!-- <div class="float-left"> -->
+                        <button class="nav-button house"><i class="fa-solid fa-house-chimney fa-xl"></i></button><button class="nav-button friends" id="friendlist-button"><i class="fa-solid fa-user-group fa-xl"></i></button><button class="nav-button shop"><i class="fa-solid fa-cart-shopping fa-xl"></i></button><button class="nav-button settings" data-bs-toggle="modal" data-bs-target="#settingsModal"><i class="fa-sharp fa-solid fa-gears fa-xl"></i></button><a href="logout"><button class="nav-button logout"><i class="fa-solid fa-right-from-bracket fa-xl"></i></button></a>
+                    <!-- </div> -->
+                    
+                </div>
+                <div class="col-6 text-center">
+                    <td class="nav-message"><input type="text" name="message" id="message-field" placeholder="Je kunt hier jouw bericht typen..."></td><button id="cmds-help"><i class="fa-solid fa-question"></i></button>
+                </div>
+                <div class="col-3" style="padding: 0px;">
+                    <div class="radio">
+                        <img src="{{ asset('assets/img/pixelfm.png') }}" alt="PixelFM Logo">
+                        <td><button class="radio-button" id="pause" value="Pause"><i class="fa-solid fa-pause"></i></button></td>
+                        <td><button class="radio-button" id="play" value="Play"><i class="fa-solid fa-play"></i></button></td><br>
+                        <td class="nav-song"><span>
+                        <span class="playnow"><strong>Speelt nu:</strong> <span href="" class="cc_streaminfo" data-bs-type="song" data-bs-username="kai">Laden...</span></span>
+                    </span></td>
                     </div>
-                    <div class="col-6 w-100 text-center">
-                        <td class="nav-message"><input type="text" name="message" id="message-field" placeholder="Je kunt hier jouw bericht typen..."></td><button id="cmds-help"><i class="fa-solid fa-question"></i></button>
-                    </div>
-                    <div class="col-3" style="padding: 0px;">
-                        <div class="float-right radio">
-                            <img src="{{ asset('assets/img/pixelfm.png') }}" alt="PixelFM Logo">
-                            <td><button class="radio-button" id="pause" value="Pause"><i class="fa-solid fa-pause"></i></button></td>
-                            <td><button class="radio-button" id="play" value="Play"><i class="fa-solid fa-play"></i></button></td><br>
-                            <td class="nav-song"><span>
-                            <span class="playnow"><strong>Speelt nu:</strong> <span href="" class="cc_streaminfo" data-type="song" data-username="kai">Laden...</span></span>
-                        </span></td>
-                        </div>
-                    </div>
+                </div>
             </div>
             <script language="javascript" type="text/javascript" src="https://hydra.shoutca.st:2199/system/streaminfo.js"></script>
             <script>
@@ -81,7 +81,6 @@
 </html>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/f9351c730f.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/f9351c730f.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="{{ asset('assets/js/toggle.js') }}"></script>
