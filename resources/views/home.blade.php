@@ -3,44 +3,6 @@
     @section('title')
         Home
     @endsection
-    <!-- Test Knop -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#settingsModal">
-  Open Instellingen Modal Test
-</button>
-
-<!-- Instellingen -->
-<div class="modal fade" id="settingsModal" tabindex="-1" aria-labelledby="settingsModalLabel" aria-hidden="true" style="backdrop-filter: blur(5px);">
-    <div class="modal-dialog">
-        <div class="modal-content" style="background-color: #16192C;">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="settingsModalLabel" style="color: #fff; font-family: RobotoTitle;">INSTELLINGEN</h1>
-            </div>
-            <div class="modal-body" style="color: #fff; font-family: RobotoText;">
-                <form class="form-floating">
-                    <input type="text" class="form-control" id="floatingInputValue" placeholder="Username" value="Kai" disabled>
-                    <label for="floatingInputValue" style="color: grey;">Gebruikersnaam</label>
-                </form>
-                <div style="padding: 5px;"></div>
-                <form class="form-floating">
-                    <input type="text" class="form-control" id="floatingInputValue" placeholder="E-mail" value="kaidenhollander2004@gmail.com" disabled>
-                    <label for="floatingInputValue" style="color: grey;">E-mailadres</label>
-                </form>
-                <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked disabled>
-                    <label class="form-check-label" for="flexSwitchCheckChecked"><span class="badge" style="background: #FFD700; box-shadow: 0px 0px 40px 5px #FFD700;">V.I.P</span> Vriendverzoeken inschakelen</label>
-                </div>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-                    <label class="form-check-label" for="flexSwitchCheckChecked">Ruilverzoeken inschakelen</label>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" style="width: 100%; height: 50px; background-color: #56AF36; border-color: #3C7A25; font-family: RobotoTitle;">Opslaan</button>
-            </div>
-        </div>
-    </div>
-</div>
 
 <style>
 
@@ -54,6 +16,7 @@
 }
 
 </style>
+
     <div class="container-fluid p-0">
         <div class="row m-auto">
             <div class="col-3 text-center">
@@ -80,9 +43,13 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Mark</td>
-                                    </tr>
+                                @foreach ($friends as $friend)
+                                    @for ($i = 0; $i < count($friend); $i++)
+                                        <tr>
+                                            <td>{{ $friend[0]->name }}</td>
+                                        </tr>
+                                    @endfor
+                                @endforeach
                                 </tbody>
                             </table>
                         </div>
