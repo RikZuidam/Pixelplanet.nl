@@ -46,7 +46,14 @@
                                 @foreach ($friends as $friend)
                                     @for ($i = 0; $i < count($friend); $i++)
                                         <tr>
-                                            <td>{{ $friend[0]->name }}</td>
+                                            <td>
+                                                <span style="text-align: left">{{ $friend[0]->name }}</span>
+                                                <span style="text-right float-right">
+                                                <button>[]</button>
+                                                <button>[]</button>
+                                                </span>
+                                                
+                                            </td>
                                         </tr>
                                     @endfor
                                 @endforeach
