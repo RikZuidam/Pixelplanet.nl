@@ -1,4 +1,5 @@
 <x-layout>
+    @extends('partials._settings')
     @section('title')
         Home
     @endsection
