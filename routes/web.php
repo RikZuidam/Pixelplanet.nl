@@ -20,19 +20,6 @@ Route::get('/', function () {
     return view('home');
 })->middleware('auth');
 
-Route::get('/loading', function () {
-    return view('loading')->with([
-        'friends' => Friend::where([
-            ['sender_player', 1],
-            ['status', 1]
-        ])->orWhere([
-            ['reciever_player', 1],
-            ['status', 1]
-        ])->get(),
-        'test' => 'test'
-    ]);
-});
-
 Route::post('/test', [FriendController::class, 'index']);
 
 Route::get('register', function () {
