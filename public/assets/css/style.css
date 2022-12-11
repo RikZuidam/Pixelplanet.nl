@@ -5,6 +5,10 @@ html,body {
     height: 100%;
 }
 
+#settingsModal {
+    font-family: Text !important;
+}
+
 .logoPP {
     font-family: Text;
     font-weight: 800;
@@ -181,6 +185,8 @@ a:hover {
 .radio {
     background-color: #303242;
     padding: 20px 15px 10px 15px;
+    width: 300px;
+    float: right;
 }
 
 .playnow {
